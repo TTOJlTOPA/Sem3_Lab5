@@ -3,9 +3,6 @@ package com.sem3.lab5;
 import java.util.*;
 import java.io.*;
 
-/**
- * Created by Валерий on 13.09.2016.
- */
 public class Main {
     public static void main(String[] args) {
         try {
