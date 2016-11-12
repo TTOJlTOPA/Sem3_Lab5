@@ -44,6 +44,7 @@ public class Functional {
         FileWriter notFoundWriter = new FileWriter("d://IntelliJ IDEA Projects/Sem3_Lab5/resources/output3.out");
         List<String> words = new ArrayList<>();
         int[] indexes;
+        int counter = 0;
         Iterator<String> iter;
         fillWords(words);
         if (words.isEmpty()) {
@@ -53,7 +54,8 @@ public class Functional {
         indexes = find(words);
         for (int i = 0; i < indexes.length; i++) {
             if (indexes[i] != -1) {
-                words.remove(i);
+                words.remove(i - counter);
+                counter++;
             }
         }
         iter = words.iterator();

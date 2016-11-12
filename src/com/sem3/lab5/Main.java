@@ -8,7 +8,7 @@ public class Main {
             Functional.findTags();
             Functional.findWords();
         } catch (IOException e) {
-            System.out.println("FIle not found!");
+            System.out.println("File not found!");
         }
     }
 }
